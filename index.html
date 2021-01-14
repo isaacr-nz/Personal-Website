@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isaacr.online</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/1fdd1fa321.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id=particles-js>
+        <div class="section__top">
+            <header>
+                <div class="title">
+                    <h1>Hi there, I'm Isaac</h1>
+                    <img src="wave.svg" height="40" alt="">
+                </div>
+                <div class="sub_title">
+                    <h3>web developer</h3>
+                    <h3>Dunedin, NZ</h3>
+                </div>
+            </header>
+        </div>
+        <div class="section__bottom">
+            <div class="container">
+                <div class="panel">
+
+                    <ul class="panel__choices">
+                        <li>
+                            <a href="mailto:isaacjross@live.com">
+                                <i class="fas fa-2x fa-at"></i>
+
+                                Email</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/isaacr-nz">
+                                <i class="fab fa-2x fa-github"></i>
+
+                                Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/isaac.rosss/">
+                                <i class="fab fa-2x fa-instagram"></i>
+
+                                Insta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="particles.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+            particlesJS.load('particles-js', 'assets/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
