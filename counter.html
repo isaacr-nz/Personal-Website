@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handler</title>
+</head>
+<body>
+  <h2>Simple JS Counter</h2>
+  <h3 id="counter">0</h3>
+  <button id="add">+</button>
+  <button id="minus">-</button>
+
+  <script>
+    let count = 0
+    const add = document.getElementById('add')
+    const minus = document.getElementById('minus')
+
+
+    document.addEventListener('click', (e) => {
+      console.log(e.target)
+      if (e.target.innerHTML === add.innerHTML) {
+        count++
+      } else if (e.target.innerHTML === minus.innerHTML) {
+        count--
+      }
+      document.getElementById('counter').innerHTML = count
+    })
+  </script>
+</body>
+</html>
